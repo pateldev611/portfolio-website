@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev-Devloper Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(32, 36, 44);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            background-color: rgb(25 19 30);
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+
+            color: rgb(119, 119, 185);
+            font-size: 1.02rem;
+        }
+
+        main hr {
+            border: 0;
+            background-color: rgb(232, 236, 233);
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 110px 0;
+
+        }
+
+        .firstSection>div {
+            width: 30%;
+
+        }
+
+        .leftSection {
+
+            width: 34px;
+            font-size: 2.5rem;
+
+
+
+        }
+
+        .rightSection img {
+
+            width: 80%;
+            margin: 50px 0;
+
+        }
+
+        .purple {
+            color: rgb(124, 28, 214);
+        }
+
+        .textgray {
+            color: grey;
+        }
+
+        #element {
+            color: rgb(124, 28, 214);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: 0;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box {
+            background: white;
+
+            height: 2px;
+            margin: 5px 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .secondSection .vertical {
+
+            width: 1px;
+            background-color: white;
+            margin: 0 140px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32pxpx;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 200px;
+
+
+
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 85px;
+            color: gray;
+            width: 400px;
+            font-size: 10px;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: rgb(25 19 30);
+
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: grey;
+            padding: 12px 0;
+
+        }
+        .thirdsection {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+           
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        .fourthsection {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+           
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        
+
+        /* Mobile View */
+        @media screen and (min-width:375px) and (max-width:667px) {
+
+            /* Navigation */
+            .nav {
+                flex-wrap:wrap;
+                position:fixed;
+            }
+
+            left-section-home .leftSection {
+                flex-direction: row;
+            }
+
+            .leftSection>div {
+                width: 40%;
+            }
+
+            .rightSection img {
+                width: 100%;
+            }
+
+            #hr1 {
+                width: 50%;
+                margin-top: 50%;
+            }
+
+            /* about section - about */
+            .thirdSection {
+                width: 50%;
+            }
+
+            .details {
+                /* font-size: 0.5rem; */
+
+                word-wrap: break-word;
+
+            }
+
+            #hr2 {
+                width: 50%;
+            }
+
+            /* skills section */
+            .secondsection {
+                align-items: center;
+            }
+
+            .skill-title {
+                align-items: center;
+            }
+
+            .container {
+                width: 50%;
+                align-items: center;
+                grid-template-columns: repeat(1, 1fr);
+
+            }
+
+            #hr3 {
+                margin-top: 115%;
+                width: 50%;
+            }
+
+            .header {
+                width: 75%;
+                align-items: center;
+            }
+            
+        }
+
+        /* Tablet View */
+        @media screen and (min-width:481px) and (max-width:768px) {
+            .container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        /* Laptop View */
+        @media screen and (min-width:769px) and (max-width:1024px) {
+            .container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Dev's Portfolio</div>
+            <div class="right" id="Home" id="About">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Contactme">Contact Me</a></li>
+                    
+
+                </ul>
+            </div>
+
+
+
+
+        </nav>
+    </header>
+    <main>
+        <a name="Home"></a>
+
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi,My name is <span class="purple">Dev</span>
+                <div>and I am a passionate </div>
+
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="dev2.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <a name="About"></a>
+        <section class="thirdsection">
+
+            <h1>ABOUT ME </h1>
+            <p><strong>Name:</strong> Dev Patel</p><br>
+            <p><strong>Date of Birth:</strong> 06 November 2003</p><br>
+            <p><strong>Address:</strong> Vadodara, Gujarat</p><br>
+            <p><strong>Phone:</strong> 7069310698</p><br>
+            <p><strong>Email:</strong> devpatel0611@gmail.com</p><br>
+            <p><strong>Education :</strong></p><br>
+            <p><strong> Institute:</strong>  Curently pusuing IT enginerring from SVIT ,Vasad</p><br>
+            <p><strong> School:</strong>  Rosary High School , Vadodara</p></p><br>
+            
+            </div>
+
+        </section>
+        <a name="Services"></a>
+        <section class="secondSection">
+            <span class="textgray">What I have done so far</span>
+            <h1>SKILLS</h1>
+            <div class="box">
+                <div class="vertical">
+
+                    <div class="vertical-title">
+                        <img src="html-logo.png" alt="" class="image-top"> HTML-5 
+                    </div>
+                    <div class="vertical-desc">
+                        Creating beautiful and functional websites is my passion. With expertise in HTML, I craft web
+                        experiences that captivate and engage users.
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        <img src="CSS-Logo.png" alt="" class="image-top"> CSS-3
+                    </div>
+                    <div class="vertical-desc">
+                        "I'm a CSS developer with a passion for turning designs into visually stunning and responsive
+                        web experiences
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        <img src="js.png" alt="" class="image-top"> JAVA Script
+                    </div>
+                    <div class="vertical-desc">
+                        I'm a JavaScript developer who brings web applications to life with the magic of code.
+                        JavaScript is not just my language; it's my passion.
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <div class="vertical-title">
+                        <img src="wd.png" alt="" class="image-top"> Web Designer
+                    </div>
+                    <div class="vertical-desc">
+                        "I'm a web designer with a creative flair and a passion for crafting visually stunning and
+                        user-friendly websites."
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+        <a name="Contactme"></a>
+        <section class="fourthsection">
+
+            <h1>CONTACT ME </h1>
+            <p><strong>Twitter:</strong> <a href="https://twitter.com/Patel_dev_11">www.twiter.com/in/your-profile</a></p><br>
+            <p><strong>Phone:</strong> 7069310698</p><br>
+            <p><strong>Email:</strong> devpatel0611@gmail.com</p><br>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dev-patel-a29011223/">www.linkedin.com/in/your-profile</a></p><br>
+            <p><strong>GitHub:</strong> <a href="https://github.com/pateldev611">github.com/your-username</a></p><br>
+            </div>
+        
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                Dev's Developer Portfolio
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+
+                    <li>About</li>
+
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+
+
+
+                    <li>Contact Me</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &copy; www.devsportfolio.com | All rights reserved </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Web</i> Developer.', '&amp; a Web Designer.'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
